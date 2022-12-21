@@ -1,64 +1,9 @@
-/* line 1, F:/Project-baloons/sass/style.sass */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* line 6, F:/Project-baloons/sass/style.sass */
-html {
-  font-size: 10px;
-}
-
-/* line 9, F:/Project-baloons/sass/style.sass */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: #777777;
-  letter-spacing: .2rem;
-  padding: 5rem;
-  background-color: white;
-}
-
-/* line 18, F:/Project-baloons/sass/style.sass */
-.container {
-  background-color: #F7F7F7;
-}
-
-/* line 21, F:/Project-baloons/sass/style.sass */
-.header {
-  position: relative;
-  height: 95vh;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-}
-
-/* line 26, F:/Project-baloons/sass/style.sass */
-.header__logo {
-  position: absolute;
-  left: 5rem;
-  top: 5rem;
-  height: 7rem;
-  width: 5.6rem;
-}
-
-/* line 32, F:/Project-baloons/sass/style.sass */
-.header__box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-/* line 40, F:/Project-baloons/sass/style.sass */
+/* line 1, ../../../../../baloons/SASS/base/_typography.sass */
 .title-first {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-/* line 42, F:/Project-baloons/sass/style.sass */
+/* line 3, ../../../../../baloons/SASS/base/_typography.sass */
 .title-first__main {
   display: block;
   font-weight: 800;
@@ -74,7 +19,7 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 55, F:/Project-baloons/sass/style.sass */
+/* line 16, ../../../../../baloons/SASS/base/_typography.sass */
 .title-first__secondary {
   display: block;
   font-weight: 200;
@@ -87,59 +32,6 @@ body {
   animation-timing-function: ease;
   backface-visibility: hidden;
   margin-bottom: 6.5rem;
-}
-
-/* line 68, F:/Project-baloons/sass/style.sass */
-.btn:link, .btn:visited {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #777777;
-  padding: 1.5rem 4rem;
-  background: white;
-  border-radius: 5rem;
-  transition: all 0.3s;
-  position: relative;
-  font-size: 2rem;
-}
-
-/* line 79, F:/Project-baloons/sass/style.sass */
-.btn:hover {
-  transform: translateY(-0.4rem);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* line 82, F:/Project-baloons/sass/style.sass */
-.btn:hover::after {
-  opacity: 0;
-  transform: scaleX(1.5) scaleY(1.7);
-}
-
-/* line 85, F:/Project-baloons/sass/style.sass */
-.btn:active {
-  transform: translateY(-2px);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* line 88, F:/Project-baloons/sass/style.sass */
-.btn::after {
-  content: "";
-  background: white;
-  width: 100%;
-  height: 100%;
-  border-radius: 5rem;
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-
-/* line 100, F:/Project-baloons/sass/style.sass */
-.btn_animated {
-  animation: BtnToUp .5s ease-out .7s;
-  animation-fill-mode: backwards;
 }
 
 @keyframes BtnToUp {
@@ -179,6 +71,174 @@ body {
     opacity: 1;
     transform: translate(0px);
   }
+}
+
+/* line 1, ../../../../../baloons/SASS/base/_base.sass */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../../../../baloons/SASS/base/_base.sass */
+html {
+  font-size: 10px;
+}
+
+/* line 9, ../../../../../baloons/SASS/base/_base.sass */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #777777;
+  letter-spacing: .2rem;
+  padding: 5rem;
+  background-color: white;
+}
+
+/* line 18, ../../../../../baloons/SASS/base/_base.sass */
+.container {
+  background-color: #F7F7F7;
+}
+
+/* line 2, ../../../../../baloons/SASS/components/_button.sass */
+.btn:link, .btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
+  padding: 1.5rem 4rem;
+  background: #ffffff;
+  border-radius: 5rem;
+  transition: all 0.3s;
+  position: relative;
+  font-size: 2rem;
+}
+
+/* line 10, ../../../../../baloons/SASS/components/_button.sass */
+.btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* line 13, ../../../../../baloons/SASS/components/_button.sass */
+.btn:hover::after {
+  opacity: 0;
+  transform: scaleX(1.5) scaleY(1.7);
+}
+
+/* line 16, ../../../../../baloons/SASS/components/_button.sass */
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* line 19, ../../../../../baloons/SASS/components/_button.sass */
+.btn::after {
+  content: "";
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+/* line 31, ../../../../../baloons/SASS/components/_button.sass */
+.btn_animated {
+  animation: BtnToUp .5s ease-out .7s;
+  animation-fill-mode: backwards;
+}
+
+/* line 1, ../../../../../baloons/SASS/layouts/_hader.sass */
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+/* line 6, ../../../../../baloons/SASS/layouts/_hader.sass */
+.header__logo {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  height: 7rem;
+  width: 5.6rem;
+}
+
+/* line 12, ../../../../../baloons/SASS/layouts/_hader.sass */
+.header__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* line 1, ../../../../../baloons/SASS/layouts/_grid.sass */
+.row {
+  max-width: 114rem;
+  background: #9e6262;
+  margin: 0 auto;
+}
+
+/* line 5, ../../../../../baloons/SASS/layouts/_grid.sass */
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+/* line 8, ../../../../../baloons/SASS/abstracts/_mixins.sass */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 9, ../../../../../baloons/SASS/layouts/_grid.sass */
+.col-1-of-2 {
+  width: calc((100% - 6rem)/2);
+}
+
+/* line 12, ../../../../../baloons/SASS/layouts/_grid.sass */
+.col-1-of-3 {
+  width: calc((100% - 2 * 6rem)/3);
+}
+
+/* line 15, ../../../../../baloons/SASS/layouts/_grid.sass */
+.col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem)/3) + 6rem);
+}
+
+/* line 18, ../../../../../baloons/SASS/layouts/_grid.sass */
+.col-1-of-4 {
+  width: calc((100% - 3 * 6rem)/4);
+}
+
+/* line 21, ../../../../../baloons/SASS/layouts/_grid.sass */
+.col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem)/4) + 6rem);
+}
+
+/* line 24, ../../../../../baloons/SASS/layouts/_grid.sass */
+.col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem)/4) + 2 * 6rem);
+}
+
+/* line 27, ../../../../../baloons/SASS/layouts/_grid.sass */
+[class^="col-"] {
+  background: #69ca43;
+  float: left;
+}
+
+/* line 30, ../../../../../baloons/SASS/layouts/_grid.sass */
+[class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
