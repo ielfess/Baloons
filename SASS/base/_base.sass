@@ -5,11 +5,20 @@
 
 html
     font-size: 10px
+    @include respond(tab-land)
+        font-size: 56.25%
+    @include respond(tab-port)
+        font-size: 50%
+    @include respond(phone)
+        font-size: 30%
+    @include respond(big-screen)
+        font-size: 75%
+
 
 body
     font-family: 'Roboto', sans-serif
     font-weight: 400
-    font-size: 1.6rem
+    font-size: $font-size-pharagraph
     color: $color-grey
     letter-spacing: .2rem
     padding: 5rem
@@ -17,3 +26,5 @@ body
 
 .container
     background-color: #F7F7F7
+    position: relative
+    z-index: 0
